@@ -1,0 +1,22 @@
+{
+ "runs": {
+  "blind": {
+   "n": 200,
+   "n_questions": 100,
+   "accuracy": 0.57,
+   "accuracy_se": 0.04439264658372004,
+   "accuracy_by_variant": {
+    "0": 0.61,
+    "1": 0.53
+   },
+   "n_invalid_verdict": 0,
+   "mean_confidence": 0.63225,
+   "quotes_total": 0,
+   "quotes_verified": 0,
+   "quote_verification_rate": null,
+   "mean_cost": 0.0001647485,
+   "total_cost": 0.0329497
+  }
+ },
+ "comparisons": []
+}

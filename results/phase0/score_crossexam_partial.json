@@ -1,0 +1,132 @@
+{
+ "runs": {
+  "blind_nano": {
+   "n": 168,
+   "n_questions": 84,
+   "accuracy": 0.5714285714285714,
+   "accuracy_se": 0.04948302526484742,
+   "accuracy_by_variant": {
+    "0": 0.5952380952380952,
+    "1": 0.5476190476190477
+   },
+   "n_invalid_verdict": 0,
+   "mean_confidence": 0.6321428571428571,
+   "quotes_total": 0,
+   "quotes_verified": 0,
+   "quote_verification_rate": null,
+   "mean_cost": 0.0001672264880952381,
+   "total_cost": 0.02809405
+  },
+  "critique_nano": {
+   "n": 168,
+   "n_questions": 84,
+   "accuracy": 0.8154761904761905,
+   "accuracy_se": 0.032556674077977375,
+   "accuracy_by_variant": {
+    "0": 0.7023809523809523,
+    "1": 0.9285714285714286
+   },
+   "n_invalid_verdict": 1,
+   "mean_confidence": 0.8055089820359282,
+   "quotes_total": 1084,
+   "quotes_verified": 993,
+   "quote_verification_rate": 0.9160516605166051,
+   "mean_cost": 0.013715709523809521,
+   "total_cost": 2.3042392
+  },
+  "standard_nano": {
+   "n": 168,
+   "n_questions": 84,
+   "accuracy": 0.7619047619047619,
+   "accuracy_se": 0.04014834661370258,
+   "accuracy_by_variant": {
+    "0": 0.7976190476190477,
+    "1": 0.7261904761904762
+   },
+   "n_invalid_verdict": 0,
+   "mean_confidence": 0.7900595238095239,
+   "quotes_total": 2650,
+   "quotes_verified": 2389,
+   "quote_verification_rate": 0.9015094339622641,
+   "mean_cost": 0.02942010029761905,
+   "total_cost": 4.94257685
+  },
+  "consultancy_nano": {
+   "n": 168,
+   "n_questions": 84,
+   "accuracy": 0.7559523809523809,
+   "accuracy_se": 0.0354202371920763,
+   "accuracy_by_variant": {
+    "0": 0.8928571428571429,
+    "1": 0.6190476190476191
+   },
+   "n_invalid_verdict": 0,
+   "mean_confidence": 0.8490476190476192,
+   "quotes_total": 1583,
+   "quotes_verified": 1458,
+   "quote_verification_rate": 0.9210360075805433,
+   "mean_cost": 0.017740256250000003,
+   "total_cost": 2.98036305
+  },
+  "standard_mini": {
+   "n": 168,
+   "n_questions": 84,
+   "accuracy": 0.7857142857142857,
+   "accuracy_se": 0.03907063117158321,
+   "accuracy_by_variant": {
+    "0": 0.7619047619047619,
+    "1": 0.8095238095238095
+   },
+   "n_invalid_verdict": 2,
+   "mean_confidence": 0.9028313253012048,
+   "quotes_total": 2650,
+   "quotes_verified": 2389,
+   "quote_verification_rate": 0.9015094339622641,
+   "mean_cost": 0.0019314553571428573,
+   "total_cost": 0.3244845
+  },
+  "crossexam": {
+   "n": 168,
+   "n_questions": 84,
+   "accuracy": 0.7797619047619048,
+   "accuracy_se": 0.040036549634912995,
+   "accuracy_by_variant": {
+    "0": 0.8095238095238095,
+    "1": 0.75
+   },
+   "n_invalid_verdict": 1,
+   "mean_confidence": 0.7905988023952096,
+   "quotes_total": 2933,
+   "quotes_verified": 2654,
+   "quote_verification_rate": 0.9048755540402319,
+   "mean_cost": 0.04065004880952381,
+   "total_cost": 6.8292082
+  }
+ },
+ "comparisons": [
+  {
+   "a": "crossexam",
+   "b": "standard_nano",
+   "n": 84,
+   "diff": 0.017857142857142856,
+   "lo": -0.05357142857142857,
+   "hi": 0.08928571428571429
+  },
+  {
+   "a": "crossexam",
+   "b": "critique_nano",
+   "n": 84,
+   "diff": -0.03571428571428571,
+   "lo": -0.10119047619047619,
+   "hi": 0.02976190476190476
+  },
+  {
+   "a": "crossexam",
+   "b": "blind_nano",
+   "n": 84,
+   "diff": 0.20833333333333334,
+   "lo": 0.09523809523809523,
+   "hi": 0.32142857142857145
+  }
+ ]
+}

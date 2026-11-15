@@ -1,0 +1,115 @@
+{
+  "_meta": {
+    "date": "2026-11-12",
+    "note": "Aggregator-sourced, official pages not confirmed. Re-verify before budgeting.",
+    "batch_discount": 0.5
+  },
+  "anthropic-haiku": {
+    "in": 1.0,
+    "out": 5.0,
+    "cached": 0.1,
+    "cache_write_mult": 1.25,
+    "batch": 0.5,
+    "model": "Haiku 4.5",
+    "source": "https://www.morphllm.com/anthropic-api-pricing",
+    "verified": false
+  },
+  "anthropic-sonnet": {
+    "in": 3.0,
+    "out": 15.0,
+    "cached": 0.3,
+    "cache_write_mult": 1.25,
+    "batch": 0.5,
+    "model": "Sonnet 4.6",
+    "source": "https://www.morphllm.com/anthropic-api-pricing",
+    "verified": false
+  },
+  "anthropic-opus": {
+    "in": 5.0,
+    "out": 25.0,
+    "cached": 0.5,
+    "cache_write_mult": 1.25,
+    "batch": 0.5,
+    "model": "Opus 4.6/4.7",
+    "source": "https://www.morphllm.com/anthropic-api-pricing",
+    "verified": false
+  },
+  "openai-small": {
+    "in": 0.2,
+    "out": 1.25,
+    "cached": 0.02,
+    "cache_write_mult": 1.0,
+    "batch": 0.5,
+    "model": "GPT-5.4 nano",
+    "source": "https://www.benchlm.ai/blog/posts/openai-api-pricing",
+    "verified": false
+  },
+  "openai-mid": {
+    "in": 0.75,
+    "out": 4.5,
+    "cached": 0.075,
+    "cache_write_mult": 1.0,
+    "batch": 0.5,
+    "model": "GPT-5.4 mini",
+    "source": "https://www.benchlm.ai/blog/posts/openai-api-pricing",
+    "verified": false
+  },
+  "openai-frontier": {
+    "in": 5.0,
+    "out": 30.0,
+    "cached": 0.5,
+    "cache_write_mult": 1.0,
+    "batch": 0.5,
+    "model": "GPT-5.6 Sol (promo pricing, at least to 2026-11-21)",
+    "source": "https://www.finout.io/blog/openai-pricing-in-2026",
+    "verified": false
+  },
+  "gemini-flash": {
+    "in": 0.5,
+    "out": 3.0,
+    "cached": 0.05,
+    "cache_write_mult": 1.0,
+    "batch": 0.5,
+    "model": "Gemini 3 Flash preview (cache price derived as 90% off, storage fee extra)",
+    "source": "https://ai.google.dev/gemini-api/docs/pricing",
+    "verified": false
+  },
+  "gemini-pro": {
+    "in": 2.0,
+    "out": 12.0,
+    "cached": 0.2,
+    "cache_write_mult": 1.0,
+    "batch": 0.5,
+    "model": "Gemini 3.1 Pro preview, <=200k ctx (sources conflict)",
+    "source": "https://www.morphllm.com/gemini-api-pricing",
+    "verified": false
+  },
+  "together-8b": {
+    "in": 0.18,
+    "out": 0.18,
+    "cached": 0.18,
+    "cache_write_mult": 1.0,
+    "batch": 0.5,
+    "model": "Llama 3.1 8B (no cache discount assumed)",
+    "source": "https://www.aipricing.guru/meta-llama-pricing/",
+    "verified": false
+  },
+  "together-70b": {
+    "in": 0.88,
+    "out": 0.88,
+    "cached": 0.88,
+    "cache_write_mult": 1.0,
+    "batch": 0.5,
+    "model": "Llama 3.3 70B (a June 2026 tracker reports a rise to 1.04)",
+    "source": "https://pricingsaas.com/companies/together/diffs/2026W24",
+    "verified": false
+  },
+  "_gpu_hourly": {
+    "h100_low": 2.29,
+    "h100_median": 4.2,
+    "a100_80gb_low": 1.49,
+    "a100_80gb_median": 2.75,
+    "source": "https://uvik.net/blog/gpu-price-index/ ; https://gpuperhour.com/rent/h100-sxm-80gb",
+    "verified": false
+  }
+}

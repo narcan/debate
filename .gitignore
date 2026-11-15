@@ -1,0 +1,12 @@
+data/
+__pycache__/
+.pytest_cache/
+.env
+.env.*
+logs/*.out
+logs/**/*.out
+results/**/*.jsonl
+!results/**/samples/*.jsonl
+logs/**/*_calls.jsonl
+logs/*_calls.jsonl
+!logs/**/samples/*.jsonl

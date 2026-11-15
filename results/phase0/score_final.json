@@ -1,0 +1,140 @@
+{
+ "runs": {
+  "blind": {
+   "n": 200,
+   "n_questions": 100,
+   "accuracy": 0.57,
+   "accuracy_se": 0.04439264658372004,
+   "accuracy_by_variant": {
+    "0": 0.61,
+    "1": 0.53
+   },
+   "n_invalid_verdict": 0,
+   "mean_confidence": 0.63225,
+   "quotes_total": 0,
+   "quotes_verified": 0,
+   "quote_verification_rate": null,
+   "mean_cost": 0.0001647485,
+   "total_cost": 0.0329497
+  },
+  "crit": {
+   "n": 200,
+   "n_questions": 100,
+   "accuracy": 0.815,
+   "accuracy_se": 0.02986078811194819,
+   "accuracy_by_variant": {
+    "0": 0.7,
+    "1": 0.93
+   },
+   "n_invalid_verdict": 1,
+   "mean_confidence": 0.8099497487437186,
+   "quotes_total": 1281,
+   "quotes_verified": 1179,
+   "quote_verification_rate": 0.9203747072599532,
+   "mean_cost": 0.0136889985,
+   "total_cost": 2.7377997
+  },
+  "std": {
+   "n": 200,
+   "n_questions": 100,
+   "accuracy": 0.775,
+   "accuracy_se": 0.03508647326336185,
+   "accuracy_by_variant": {
+    "0": 0.8,
+    "1": 0.75
+   },
+   "n_invalid_verdict": 0,
+   "mean_confidence": 0.7935500000000001,
+   "quotes_total": 3131,
+   "quotes_verified": 2840,
+   "quote_verification_rate": 0.9070584477802619,
+   "mean_cost": 0.0295430605,
+   "total_cost": 5.9086121
+  },
+  "cons": {
+   "n": 200,
+   "n_questions": 100,
+   "accuracy": 0.75,
+   "accuracy_se": 0.032176909972114094,
+   "accuracy_by_variant": {
+    "0": 0.9,
+    "1": 0.6
+   },
+   "n_invalid_verdict": 0,
+   "mean_confidence": 0.8502500000000001,
+   "quotes_total": 1857,
+   "quotes_verified": 1718,
+   "quote_verification_rate": 0.9251480883144857,
+   "mean_cost": 0.01776846525,
+   "total_cost": 3.55369305
+  },
+  "std_mini": {
+   "n": 200,
+   "n_questions": 100,
+   "accuracy": 0.79,
+   "accuracy_se": 0.03421559689245639,
+   "accuracy_by_variant": {
+    "0": 0.76,
+    "1": 0.82
+   },
+   "n_invalid_verdict": 2,
+   "mean_confidence": 0.9021212121212121,
+   "quotes_total": 3131,
+   "quotes_verified": 2840,
+   "quote_verification_rate": 0.9070584477802619,
+   "mean_cost": 0.0019363649999999998,
+   "total_cost": 0.387273
+  },
+  "xexam_all": {
+   "n": 169,
+   "n_questions": 85,
+   "accuracy": 0.7810650887573964,
+   "accuracy_se": 0.03964748272969899,
+   "accuracy_by_variant": {
+    "0": 0.8117647058823529,
+    "1": 0.75
+   },
+   "n_invalid_verdict": 1,
+   "mean_confidence": 0.7905357142857143,
+   "quotes_total": 2951,
+   "quotes_verified": 2668,
+   "quote_verification_rate": 0.9041003049813623,
+   "mean_cost": 0.040642918343195264,
+   "total_cost": 6.8686532
+  }
+ },
+ "comparisons": [
+  {
+   "a": "crit",
+   "b": "std",
+   "n": 100,
+   "diff": 0.04,
+   "lo": -0.015,
+   "hi": 0.095
+  },
+  {
+   "a": "cons",
+   "b": "crit",
+   "n": 100,
+   "diff": -0.065,
+   "lo": -0.115,
+   "hi": -0.015
+  },
+  {
+   "a": "cons",
+   "b": "std",
+   "n": 100,
+   "diff": -0.025,
+   "lo": -0.085,
+   "hi": 0.04
+  },
+  {
+   "a": "std_mini",
+   "b": "std",
+   "n": 100,
+   "diff": 0.015,
+   "lo": -0.05,
+   "hi": 0.075
+  }
+ ]
+}
