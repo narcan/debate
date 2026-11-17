@@ -13,7 +13,7 @@ Stages 0 and 1 complete. Stage 2: consultancy complete, mini-judge sweep complet
 | Critique-only, nano (primary) | 200 | 100 | 81.5% | [75.5, 87.5] | 1 |
 | Standard N=3, nano (primary) | 200 | 100 | 77.5% | [70.5, 84.0] | 0 |
 | Consultancy N=3, nano | 200 | 100 | 75.0% | [68.5, 81.0] | 0 |
-| Cross-exam N=3, nano (INCOMPLETE) | 169 | 85 | 78.2% | [70.6, 85.3] | 1 |
+| Cross-exam N=3, nano (INCOMPLETE) | 169 | 85 | 78.1% | [70.6, 85.3] | 1 |
 | Standard N=3, mini judge (same transcripts re-judged) | 200 | 100 | 79.0% | [72.0, 85.5] | 2 |
 
 ## Paired comparisons (per-question differences, paired bootstrap)
