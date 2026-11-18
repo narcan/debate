@@ -28,6 +28,7 @@ ap.add_argument("--questions", type=int, default=100)
 ap.add_argument("--seed", type=int, default=0)
 ap.add_argument("--reasoning", default="none")
 ap.add_argument("--max-tokens", type=int, default=600)
+ap.add_argument("--strict", action="store_true", help="stricter format instruction")
 ap.add_argument("--workers", type=int, default=3)
 ap.add_argument("--budget", type=float, default=2.0)
 ap.add_argument("--global-cap", type=float, default=30.0)
@@ -44,7 +45,9 @@ guard = BudgetGuard(a.budget, a.global_cap, LEDGER_PATH)
 log = os.path.join(ROOT, "logs", "capability", os.path.basename(a.out).replace(".jsonl", "_calls.jsonl"))
 os.makedirs(os.path.dirname(log), exist_ok=True)
 client = OpenRouterClient(guard, log, run_id=os.path.basename(a.out))
-reasoning = None if a.reasoning == "none" else {"effort": a.reasoning}
+reasoning = None if a.reasoning == "none" else ({"enabled": False} if a.reasoning == "off" else {"effort": a.reasoning})
+if a.strict:
+    SYS += "\nOutput only those two lines and nothing else. Do not explain. Do not think out loud."
 
 def one(i):
     try:
