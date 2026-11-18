@@ -25,3 +25,10 @@ About 380 questions at 2 variants is 760 instances per arm. At the measured per-
 - Fix truncation first, rerun a small check, then decide whether the full sample is worth it.
 - Test a cheaper debater (`anthropic/claude-haiku-5.5` is listed at about a tenth of the Haiku 4.5 price and is untested).
 - Move to the planned questions: values-type questions and human judges.
+
+## Added 2026-11-18: judge strength
+
+The pilot's judge is passage-blind, which makes it weaker in information, but nothing in the repo shows it is weaker in capability than the debater (GPT-5.4 nano costs about a fifth of Haiku 4.5 per token, and price is only a rough proxy). Two additions for any continuation:
+
+1. Capability check: give each model the passage and the question with no debate, and compare accuracy. This is about 400 calls, estimated well under $2.
+2. Judge-strength sweep with an open-weight family served by a hosted provider (the Qwen family on OpenRouter lists several sizes). Report accuracy, position bias, susceptibility to persuasive wrong arguments and calibration. Which of the listed Qwen models have open weights is unchecked.
